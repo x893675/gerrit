@@ -12,7 +12,7 @@ RUN rpm -i https://gerritforge.com/gerritforge-repo-1-2.noarch.rpm
 RUN yum -y install java-1.8.0-openjdk
 RUN yum -y install gerrit-2.13.14
 
-RUN yum install epel-release && \
+RUN yum install -y epel-release && \
     yum makecache && \
     yum -y install python-pip python-devel &&\
     cd /tmp &&\
